@@ -3,9 +3,10 @@
   font-family: "Nunito";
   src: url(../fonts/Nunito/Nunito-VariableFont_wght.ttf) format(TrueType);
 }
-
+html{
+	font-family: "Nunitos", 'Arial', 'Helvetica';
+}
 body {
-  font-family: "Nunitos", 'Arial', 'Helvetica';
   color: #555;
   background-color: #eee;
 }
@@ -62,10 +63,8 @@ footer {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
   display: flex;
   justify-content: space-around;
-  margin: 0;
   background-color: #E6F4F1;
 }
 
@@ -83,10 +82,6 @@ nav ul li a.active,
 nav ul li a:hover {
   color: #23527C;
   border-bottom: 3px solid #23527C;
-}
-
-html{
-	font-family: "Nunitos", 'Arial', 'Helvetica';
 }
 
 /*Start of Ali-Home Css */
