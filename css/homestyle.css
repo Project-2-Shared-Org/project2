@@ -56,7 +56,6 @@ html{
 	font-family: "Nunitos", Times, sans-serif;
 }
 
-/* Body*/
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 1rem;
@@ -117,7 +116,7 @@ footer {
 }
 
 nav ul li a {
-  color: #333d9e; 
+  color: #333d9e;
 }
 
 nav ul li a.active,
