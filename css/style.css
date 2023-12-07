@@ -136,6 +136,11 @@ html{
   opacity: 0;
   visibility: hidden; 
 }
+
+.home-info {
+  color: #2b6ca3; /* Or any blue shade you prefer */
+}
+
 /* End of Ali - Home CSS */
 
 
