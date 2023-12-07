@@ -10,7 +10,6 @@ body {
   color: #555;
   background-color: #eee;
 }
-
 header {
   background-color: #E6F4F1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -18,33 +17,20 @@ header {
   top: 0;
   z-index: 1000;
 }
-
 #logo-container {
   display: flex;
   align-items: center;
   padding: 5px 10px;
 }
-
 #logo {
   height: 50px; 
   margin-right: 15px;
 }
-
 h1 {
   font-family: 'Georgia', serif;
   font-size: 1.6em;
   color: #3071A9; 
   margin: 0;
-}
-
-footer {
-  background-color: #E6F4F1;
-  color: #555;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -146,7 +132,7 @@ nav ul li a:hover {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 12px 0;
+  padding: 0 0;
 }
 .gradient {
   height: 100%;
@@ -172,7 +158,6 @@ nav ul li a:hover {
   padding-left: 8px;
   display: inline-block;
 }
-
 .about-text ul li::before {
   content: "🌎 ";
 }
@@ -233,33 +218,30 @@ p {
 /* Footer*/
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2em 0;
   background-color: #2b6ca3;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: .8em;
   position: relative;
-}
-
-.reach-us {
-  position: absolute;
   bottom: 0;
-  right: 0;
-  margin: 10px;
+  width:100%;
 }
 
-.reach-us {
-	position: absolute;
+footer .copyright {
+  float:left;
+  margin: 0;
+  top: 0;
+}
+
+footer .reach-us {
+  float:right;
+	position: relative;
 	bottom: 0;
 	right: 0;
-	margin: 10px;
+	margin: 0;
 }
 
-.reach-us a {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.reach-us img {
+footer .reach-us img {
   width: 30px;
 }
 
@@ -300,8 +282,6 @@ a {
   text-decoration: none;
   transition: color 0.3s;
 }
-
-
 
 /* Input Fields */
 .input{
