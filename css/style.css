@@ -7,8 +7,7 @@
 body {
   font-family: "Nunitos", 'Arial', 'Helvetica';
   color: #555;
-  margin: 0;
-  padding: 0;
+  background-color: #eee;
 }
 
 header {
@@ -211,16 +210,6 @@ html{
 
 /*Start of Yawar-Contact Css */
 /* Body */
-body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 1rem;
-}
-
-body {
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
 
 h1, h2, h3 {
   font-weight: bold;
