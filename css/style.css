@@ -137,15 +137,19 @@ html{
   visibility: hidden; 
 }
 
-.home-info {
-  color: #2b6ca3; /* Or any blue shade you prefer */
+.home-info a {
+  color: #2b6ca3; 
+}
+
+.home-info p {
+  color: #2b6ca3; 
 }
 
 /* End of Ali - Home CSS */
 
 
 /*Start of Yawar-Contact Css */
-/* Body*/
+/* Body */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 1rem;
