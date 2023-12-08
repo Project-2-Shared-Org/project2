@@ -7,7 +7,7 @@ html{
 	font-family: "Nunitos", 'Arial', 'Helvetica';
 }
 body {
-  color: #555;
+  color: #111;
   background-color: #eee;
 }
 header {
@@ -27,24 +27,10 @@ header {
   margin-right: 15px;
 }
 h1 {
-  font-family: 'Georgia', serif;
+  font-family: 'Georgia', 'Times New Roman', 'Times';
   font-size: 1.6em;
   color: #3071A9; 
   margin: 0;
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    flex-direction: column;
-  }
-
-  #logo {
-    margin: 0 auto;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
 }
 
 nav ul {
@@ -132,7 +118,6 @@ nav ul li a:hover {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 0 0;
 }
 .gradient {
   height: 100%;
@@ -140,10 +125,10 @@ nav ul li a:hover {
   position: absolute;
 }
 .about-container img {
-  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,1) 99%, transparent 100%);
-  left:30%;
-  height: max-content;
-  position: absolute;
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.25) 50%, rgba(0,0,0,1) 97%, transparent 100%);
+  right:0;
+  height: 100%;
+  position:absolute;
   z-index: -1;
 }
 .about-text {
@@ -152,8 +137,8 @@ nav ul li a:hover {
   width: 60%;
   word-wrap: break-word;
   line-height: 16pt;
+  padding: 2em 0;
 }
-
 .about-text ul {
   padding-left: 8px;
   display: inline-block;
@@ -164,29 +149,19 @@ nav ul li a:hover {
 
 #bottom {
   width: 100%;
-  overflow: hidden;
-  position: relative;
 }
 #picture {
-  float: left;
-  width: 50%;
+  float:left;
+  width:50%;
+  height: 10em;
 }
 #picture img {
-  width: 100%;
+  float:right;
+  height: 100%;
 }
 #board {
-  margin-left: 50%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#board #board-text {
-  text-align: right;
-  position: absolute;
-  top:50%;
-  height: 50%;
+  float:left;
+  padding: 0 2em;
 }
 
 /*Start of Yawar-Contact Css */
@@ -217,28 +192,24 @@ p {
 
 /* Footer*/
 footer {
-  text-align: center;
-  padding: 2em 0;
+  padding: 0.5em 0;
+  display: inline-block;
   background-color: #2b6ca3;
+  overflow:hidden;
   color: #ffffff;
   font-size: .8em;
-  position: relative;
-  bottom: 0;
   width:100%;
+  bottom:0;
 }
 
 footer .copyright {
   float:left;
-  margin: 0;
-  top: 0;
+  padding: 0 1em;
 }
 
 footer .reach-us {
   float:right;
-	position: relative;
-	bottom: 0;
-	right: 0;
-	margin: 0;
+  padding: 0 1em;
 }
 
 footer .reach-us img {
@@ -294,7 +265,7 @@ label {
   flex: 1;
   text-align: right;
   margin-right: 10px;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', 'Arial', 'Helvetica';
   font-size: 1.125em;
 }
 
@@ -345,6 +316,38 @@ button:hover {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  #logo {
+    margin: 0 auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  /* About - Mobile */
+  .about-container img {
+    display: none;
+  }
+  .about-text {
+    position: relative;
+    display:inline-block;
+    width: 100%;
+    line-height: 16pt;
+    padding: 2em 0;
+  }
+
+  #board {
+    float:right;
+    padding: 0;
+    width:49%;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   /* Header and Navigation - Tablet */
   nav ul li {
@@ -372,7 +375,7 @@ button:hover {
     max-width: 75%;
     margin: 0 auto;
     padding: 20px;
-  }
+  }  
 
   /* Contact Form - Tablet */
   .contact-box {
