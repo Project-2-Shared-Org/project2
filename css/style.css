@@ -346,40 +346,6 @@ button:hover {
     padding: 0;
     width:49%;
   }
-
-  /* Home - Mobile */
-  #carousel {
-    width: 80%;
-    margin: 10px auto;
-    position: relative;
-    overflow: hidden;
-    min-height: 200px; 
-  }
-
-  .carousel-image {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    opacity: 1;
-    min-height: 150px; 
-  }
-
-  .carousel-control.left,
-  .carousel-control.right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .carousel-control.left {
-    left: 0;
-  }
-
-  .carousel-control.right {
-    right: 0;
-  }
 }
 
 @media only screen and (min-width: 600px) {
