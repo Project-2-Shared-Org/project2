@@ -3,33 +3,44 @@
   font-family: "Nunito";
   src: url(../fonts/Nunito/Nunito-VariableFont_wght.ttf) format(TrueType);
 }
-html{
-	font-family: "Nunitos", 'Arial', 'Helvetica';
+
+html {
+  font-family: "Nunitos", 'Arial', 'Helvetica';
 }
+
 body {
   color: #111;
   background-color: #eee;
 }
+
 header {
   background-color: #E6F4F1;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  flex-direction: column;
 }
+
+main {
+  padding: 0 0.4em;
+}
+
 #logo-container {
   display: flex;
   align-items: center;
   padding: 5px 10px;
 }
+
 #logo {
-  height: 50px; 
-  margin-right: 15px;
+  height: 50px;
+  margin: 0 auto;
 }
+
 h1 {
   font-family: 'Georgia', 'Times New Roman', 'Times';
   font-size: 1.6em;
-  color: #3071A9; 
+  color: #3071A9;
   margin: 0;
 }
 
@@ -42,12 +53,14 @@ nav ul {
 
 nav ul li {
   padding: 10px 20px;
+  display: inline;
+  margin: 0;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #3071A9;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 nav ul li a.active,
@@ -58,26 +71,26 @@ nav ul li a:hover {
 
 /*Start of Ali-Home Css */
 #carousel {
-  max-width: 60%;
-  margin: 10px auto;
+  max-width: 100%;
+  margin: 0;
   position: relative;
   overflow: hidden;
 }
 
 .carousel-image {
   width: 60%;
-  display: block; 
-  transition: opacity 0.5s ease-in-out; 
-  position: absolute; 
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  opacity: 0; 
+  opacity: 0;
 }
 
 .visible {
-  opacity: 1; 
-  position: relative; 
+  opacity: 1;
+  position: relative;
 }
 
 .carousel-control {
@@ -100,49 +113,50 @@ nav ul li a:hover {
 
 .hidden {
   opacity: 0;
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 .home-info a {
-  color: #2b6ca3; 
+  color: #2b6ca3;
 }
 
 .home-info p {
-  color: #2b6ca3; 
+  color: #2b6ca3;
 }
 
 /* End of Ali - Home CSS */
 
 /* About CSS  */
-.about-container{
+.about-container {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
+
 .gradient {
   height: 100%;
   width: 100%;
   position: absolute;
 }
+
 .about-container img {
-  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.25) 50%, rgba(0,0,0,1) 97%, transparent 100%);
-  right:0;
-  height: 100%;
-  position:absolute;
-  z-index: -1;
+  display: none;
 }
+
 .about-text {
   position: relative;
-  display:inline-block;
-  width: 60%;
-  word-wrap: break-word;
+  display: inline-block;
+  width: 100%;
   line-height: 16pt;
   padding: 2em 0;
+  word-wrap: break-word;
 }
+
 .about-text ul {
   padding-left: 8px;
   display: inline-block;
 }
+
 .about-text ul li::before {
   content: "🌎 ";
 }
@@ -150,33 +164,38 @@ nav ul li a:hover {
 #bottom {
   width: 100%;
 }
+
 #picture {
-  float:left;
-  width:50%;
+  float: left;
+  width: 50%;
   height: 10em;
 }
+
 #picture img {
-  float:right;
-  height: 100%;
+  float: right;
+  width: 100%;
 }
+
 #board {
-  float:left;
-  padding: 0 2em;
+  float: right;
+  width: 49%;
 }
 
 /*Start of Yawar-Contact Css */
 /* Body */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
 
-h1{
+h1 {
   font-size: 1.44em;
   color: #2b6ca3;
 }
 
-h2{
+h2 {
   font-size: 1.44em;
   color: #333d9e;
   position: relative;
@@ -195,20 +214,20 @@ footer {
   padding: 0.5em 0;
   display: inline-block;
   background-color: #2b6ca3;
-  overflow:hidden;
+  overflow: hidden;
   color: #ffffff;
   font-size: .8em;
-  width:100%;
-  bottom:0;
+  width: 100%;
+  bottom: 0;
 }
 
 footer .copyright {
-  float:left;
+  float: left;
   padding: 0 1em;
 }
 
 footer .reach-us {
-  float:right;
+  float: right;
   padding: 0 1em;
 }
 
@@ -227,6 +246,7 @@ nav ul li a {
   text-decoration: none;
   transition: color 0.3s;
 }
+
 ul {
   list-style: none;
 }
@@ -252,7 +272,7 @@ a {
 }
 
 /* Input Fields */
-.input{
+.input {
   display: flex;
   align-items: center;
   margin: 10px 0;
@@ -266,23 +286,23 @@ label {
   font-size: 1.125em;
 }
 
-label, input[type="email"], textarea {
+label,
+input[type="email"],
+textarea {
   width: 100%;
 }
 
-input[type="email"], textarea {
+input[type="email"],
+textarea {
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #bdc3c7;
   border-radius: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #bdc3c7;
-  border-radius: 5px;
 }
 
 button {
@@ -302,77 +322,17 @@ button:hover {
 /*Mobile contact form*/
 .contact-form {
   background-color: #a4d0db;
-  padding: 100px 50px;
-  margin: 5px 0;
+  padding: 1em .4em;
+  margin: 1em 0;
 }
 
 /* mobile content*/
-.content{
+.content {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-  header {
-    flex-direction: column;
-  }
-  nav ul li {
-    display: inline;
-    margin: 0;
-  }
-  nav ul li a {
-    font-size: 1em;
-  }
-  main {
-    padding: 0 0.4em;
-  }
-
-  #logo {
-    margin: 0 auto;
-  }
-
-  /* Home - Mobile */
-  #carousel {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  /* About - Mobile */
-  .about-container img {
-    display: none;
-  }
-  .about-text {
-    position: relative;
-    display:inline-block;
-    width: 100%;
-    line-height: 16pt;
-    padding: 2em 0;
-  }
-  #picture img {
-    float:right;
-    width: 100%;
-    height:auto;
-  }
-  #board {
-    float:right;
-    padding: 0;
-    width:49%;
-  }
-
-  /* Contact - Mobile */
-  input, textarea {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  border: none;
-  }
-
-  .contact-form{
-    padding: 1em .4em;
-    margin: 1em 0;
-  }
-}
-
 @media only screen and (min-width: 600px) {
+
   /* Header and Navigation - Tablet */
   nav ul li {
     display: inline;
@@ -380,25 +340,30 @@ button:hover {
   }
 
   /* Tablet Content */
- 
-  .content{
-    width: 700px; 
-    height: 500px; 
+
+  .content {
+    width: 700px;
+    height: 500px;
   }
-  
+
   .image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   /* Page Content - Tablet */
   .content {
     max-width: 75%;
     margin: 0 auto;
     padding: 20px;
-  }  
+  }
+
+  #picture img {
+    max-height: 12em;
+    width:auto;
+  }
 
   /* Contact Form - Tablet */
   .contact-box {
@@ -414,29 +379,56 @@ button:hover {
     flex: 1;
     margin-left: 20px;
   }
-  
+
   @media only screen and (min-width: 992px) {
-  h1 {
-    font-size: 1.728em;
+    h1 {
+      font-size: 1.728em;
+    }
+
+    h2 {
+      font-size: 1.728em;
+    }
+
+    h3 {
+      font-size: 1.44em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
   }
 
-  h2 {
-    font-size: 1.728em;
+  /* Home - Wide */
+  #carousel {
+    max-width: 60%;
+    margin: 10px auto;
   }
 
-  h3 {
-    font-size: 1.44em;
+  /* About - Wide */
+  .about-container img {
+    display:flex;
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .25) 50%, rgba(0, 0, 0, 1) 97%, transparent 100%);
+    right: 0;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
   }
 
-  p {
-    font-size: 1.2em;
+  .about-text {
+    width: 60%;
   }
-}
 
-  /* Info Blocks - Tablet*/
-  .contact-form{
+  /* Contact - Wide */
+  input,
+  textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+  }
+
+  .contact-form {
     padding: 100px 50px;
     margin: 20px 0;
   }
 }
-/* End of Yawar CSS */
